@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milkias Habtemariam | Cloud Portfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #03010D;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(3, 1, 13, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .text h1 {
+            font-size: 1.5rem;
+        }
+
+        .text h2 {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #d0d0d0;
+            margin-top: 5px;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 38px;
+            height: 38px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 180px 20px 120px;
+        }
+
+        .hero-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.35;
+        }
+
+        .overlay-box {
+            position: relative;
+            width: min(900px, 90%);
+            background-color: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 30px;
+            padding: 50px 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            z-index: 2;
+        }
+
+        .profile-pic {
+            width: min(260px, 65vw);
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 30px;
+        }
+
+        .hero-title {
+            font-size: clamp(30px, 5vw, 50px);
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(18px, 3vw, 28px);
+            color: #d8d8d8;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: clamp(16px, 2.5vw, 22px);
+            line-height: 1.7;
+            color: #f0f0f0;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .about {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .about h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            max-width: 900px;
+            margin: auto;
+            font-size: clamp(18px, 2vw, 22px);
+            line-height: 1.9;
+            color: #d8d8d8;
+        }
+
+        @media (max-width: 768px) {
+
+            .top-bar {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .header {
+                flex-direction: column;
+            }
+
+            .hero {
+                padding-top: 240px;
+            }
+
+            .overlay-box {
+                padding: 40px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+
+        <div class="header">
+            <img src="cloud1.jpg" alt="Logo" class="icon">
+
+            <div class="text">
+                <h1>Milkias Habtemariam</h1>
+                <h2>Cloud & AI Practitioner | Data Analyst</h2>
+            </div>
+        </div>
+
+        <div class="socials">
+            <a href="https://github.com/milkiashabtemariam14-design" target="_blank">
+                <img src="github.png" class="social-icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/milkias-habtemariam-5b129b356/" target="_blank">
+                <img src="linkedin.png" class="social-icon">
+            </a>
+
+            <a href="#">
+                <img src="x.png" class="social-icon">
+            </a>
+        </div>
+
+    </div>
+
+    <section class="hero">
+
+        <img src="bk2.jpg" alt="Background" class="hero-img">
+
+        <div class="overlay-box">
+
+            <img src="pro.png" alt="Profile" class="profile-pic">
+
+            <h1 class="hero-title">Milkias Habtemariam</h1>
+
+            <h2 class="hero-subtitle">Cloud & AI Practitioner</h2>
+
+            <p class="hero-description">
+                Building cloud-based solutions with AWS, Linux, networking, and modern web technologies while growing in cloud computing and data analysis.
+            </p>
+
+        </div>
+
+    </section>
+
+    
+
+    <section class="about">
+
+        <h1>About Me</h1>
+
+        <p>
+            Aspiring cloud professional with hands-on experience in AWS cloud infrastructure, Linux, and networking through the Per Scholas AWS re/Start program. Currently pursuing a Bachelor of Science in Information Technology focused on Cloud Computing and Data Analysis. Experienced in customer service, accounting, operations support, and technical troubleshooting, with a strong interest in cloud technologies, AI-driven solutions, and continuous learning.
+        </p>
+
+    </section>
+
+    <style>
+
+.section-container {
+    padding: 100px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 60px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 25px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: #cfcfcf;
+}
+
+.info-card p {
+    line-height: 1.8;
+    color: #d8d8d8;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: white;
+    color: #03010D;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    opacity: 0.85;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-links a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+</style>
+
+
+<!-- PROJECTS -->
+
+<section class="section-container">
+
+    <h1 class="section-title">Projects</h1>
+
+    <div class="card-grid">
+
+        <div class="info-card">
+            <h2>Multilingual AWS Chatbot</h2>
+
+            <p>
+                Developing a multilingual chatbot using AWS cloud technologies, responsive web development, and API integration concepts.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                AWS, HTML, CSS, JavaScript, Amazon Lex, Lambda
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h2>AWS Portfolio Website</h2>
+
+            <p>
+                Built and deployed a responsive personal portfolio showcasing cloud, Linux, networking, and web development skills.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                HTML, CSS, AWS S3, EC2
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h2>Cloud Infrastructure Labs</h2>
+
+            <p>
+                Configured AWS cloud environments including EC2 instances, VPCs, subnets, security groups, and load balancing concepts.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                AWS EC2, VPC, IAM, Linux
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRAINING -->
+
+<section class="section-container">
+
+    <h1 class="section-title">Training & Certifications</h1>
+
+    <div class="card-grid">
+
+        <div class="info-card">
+
+            <h2>Per Scholas AWS re/Start</h2>
+
+            <p>
+                Intensive full-time cloud computing training covering AWS cloud services, Linux administration, networking, security, databases, Python, and cloud operations.
+            </p>
+
+        </div>
+
+        <div class="info-card">
+
+            <h2>Information Technology Studies</h2>
+
+            <p>
+                Pursuing a Bachelor of Science in Information Technology with concentration in Cloud Computing and Data Analysis.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="section-container">
+
+    <h1 class="section-title">Experience</h1>
+
+    <div class="card-grid">
+
+        <div class="info-card">
+
+            <h2>Avis Budget Group</h2>
+
+            <h3>Customer Service Representative</h3>
+
+            <p>
+                Assisted high-volume customer operations while resolving service issues, maintaining accurate documentation, and supporting daily operational efficiency.
+            </p>
+
+        </div>
+
+        <div class="info-card">
+
+            <h2>Nainat Commercio</h2>
+
+            <h3>Accounting & Business Analysis</h3>
+
+            <p>
+                Analyzed financial and operational data, prepared reports, identified discrepancies, and supported process improvements.
+            </p>
+
+        </div>
+
+        <div class="info-card">
+
+            <h2>Vehicle Electronics Maintenance</h2>
+
+            <h3>Technical Support & Repair</h3>
+
+            <p>
+                Diagnosed, repaired, and installed vehicle electronic systems while troubleshooting technical equipment issues.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RESUME -->
+
+<section class="section-container" style="text-align:center;">
+
+    <h1 class="section-title">Resume</h1>
+
+    <p style="max-width:700px; margin:auto; line-height:1.8; color:#d8d8d8;">
+        Download my resume to learn more about my technical training, cloud computing experience, and professional background.
+    </p>
+
+    <a href="Milkias_Resume.pdf" download class="resume-btn">
+        Download Resume
+    </a>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section-container" style="text-align:center;">
+
+    <h1 class="section-title">Connect With Me</h1>
+
+    <p style="color:#d8d8d8;">
+        Open to internships, cloud computing opportunities, and collaborative projects.
+    </p>
+
+    <div class="contact-links">
+
+        <a href="mailto:milkiashabtemariam14@gmail.com">
+            Email
+        </a>
+
+        <a href="https://github.com/milkiashabtemariam14-design" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/milkias-habtemariam-5b129b356/" target="_blank">
+            LinkedIn
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>
